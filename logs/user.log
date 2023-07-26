@@ -1,0 +1,59 @@
+{"level":"error","message":"An error occured: TypeError: userService.generateToken is not a function","timestamp":"2023-06-30 11:51:45"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-06-30 11:53:52"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-06-30 11:56:59"}
+{"level":"error","message":"An error occured: Error: payload is required","timestamp":"2023-06-30 12:00:23"}
+{"level":"error","message":"An error occured: Error: payload is required","timestamp":"2023-06-30 12:01:05"}
+{"level":"error","message":"An error occured: Error: payload is required","timestamp":"2023-06-30 12:02:11"}
+{"level":"error","message":"An error occured: Error: payload is required","timestamp":"2023-06-30 12:03:28"}
+{"level":"error","message":"An error occured: Error: Expected \"payload\" to be a plain object.","timestamp":"2023-06-30 12:04:16"}
+{"level":"error","message":"An error occured: Error: Expected \"payload\" to be a plain object.","timestamp":"2023-06-30 12:04:45"}
+{"level":"error","message":"An error occured: ReferenceError: lastName is not defined","timestamp":"2023-06-30 12:06:02"}
+{"level":"error","message":"An error occured: ReferenceError: _id is not defined","timestamp":"2023-06-30 12:07:05"}
+{"level":"error","message":"An error occured: TypeError: Assignment to constant variable.","timestamp":"2023-06-30 12:07:25"}
+{"level":"error","message":"An error occured: TypeError: Assignment to constant variable.","timestamp":"2023-06-30 12:07:55"}
+{"level":"error","message":"An error occured: ReferenceError: newUser is not defined","timestamp":"2023-06-30 12:10:28"}
+{"level":"error","message":"An error occured: TypeError: Assignment to constant variable.","timestamp":"2023-06-30 12:10:56"}
+{"level":"error","message":"An error occured: ReferenceError: mailService is not defined","timestamp":"2023-06-30 12:15:02"}
+{"level":"info","message":"New user created","timestamp":"2023-06-30 12:18:54"}
+{"level":"info","message":"New user created","timestamp":"2023-06-30 12:23:39"}
+{"level":"error","message":"An error occured: TypeError: Cannot read properties of null (reading '_id')","timestamp":"2023-06-30 12:27:36"}
+{"level":"error","message":"An error occured: TypeError: User.create(...).select is not a function","timestamp":"2023-06-30 12:30:06"}
+{"level":"info","message":"New user created","timestamp":"2023-06-30 12:32:04"}
+{"level":"info","message":"New user created","timestamp":"2023-06-30 12:34:33"}
+{"level":"error","message":"An error occured: Error: Expected \"payload\" to be a plain object.","timestamp":"2023-06-30 12:42:37"}
+{"level":"info","message":"User Logged In","timestamp":"2023-06-30 12:43:25"}
+{"level":"info","message":"User Logged In","timestamp":"2023-06-30 12:45:03"}
+{"level":"info","message":"User Logged In","timestamp":"2023-06-30 12:48:28"}
+{"level":"info","message":"User Data Updated","timestamp":"2023-06-30 12:56:39"}
+{"level":"info","message":"User Logged In","timestamp":"2023-06-30 13:03:56"}
+{"level":"info","message":"Data Fetched","timestamp":"2023-06-30 13:04:17"}
+{"level":"info","message":"User Verified","timestamp":"2023-06-30 13:23:36"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:12:27"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:12:37"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:14:33"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:15:10"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:15:52"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:17:32"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:19:54"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:20:32"}
+{"level":"error","message":"An error occured: Error: secretOrPrivateKey must have a value","timestamp":"2023-07-04 11:21:14"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 11:23:28"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 11:26:16"}
+{"level":"info","message":"User Data Updated","timestamp":"2023-07-04 11:26:46"}
+{"level":"info","message":"Data Fetched","timestamp":"2023-07-04 11:26:58"}
+{"level":"info","message":"User Verified","timestamp":"2023-07-04 11:38:31"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 11:57:09"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 12:03:00"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 12:04:21"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 13:25:18"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 13:29:03"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 13:48:47"}
+{"level":"info","message":"User Image Updated","timestamp":"2023-07-04 14:23:46"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 14:35:23"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 14:39:10"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 14:58:46"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-04 15:03:14"}
+{"level":"info","message":"User Logged In","timestamp":"2023-07-05 10:30:37"}
+{"level":"info","message":"User Logged In - 649eba1e06f0025f201f9981","timestamp":"2023-07-05 17:59:09"}
+{"level":"info","message":"New user created - 64c04a1dda3cd73e7a422526","timestamp":"2023-07-25 23:18:05"}
+{"level":"info","message":"User Logged In - 64c04a1dda3cd73e7a422526","timestamp":"2023-07-25 23:18:25"}
