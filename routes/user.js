@@ -322,4 +322,36 @@ router.post(
   userController.resetPassword
 );
 
+/**
+ * @openapi
+ * '/api/v1/user/approve':
+ *  post:
+ *     tags:
+ *     - User
+ *     summary: Confirm User
+ *     requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *           schema:
+ *            type: object
+ *            required:
+ *              - email
+ *              - code
+ *            properties:
+ *              email:
+ *                type: string
+ *                default: ade@yahoo.com
+ *     responses:
+ *      200:
+ *        description: Verified
+ *      409:
+ *        description: Conflict
+ *      404:
+ *        description: Not Found
+ *      500:
+ *        description: Server Error
+ */
+router.post("/approve", userController.confirmUser);
+
 module.exports = router;

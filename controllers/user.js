@@ -292,3 +292,35 @@ exports.resetPassword = async (req, res) => {
     return res.status(response.code).json(response);
   }
 };
+
+exports.confirmUser = async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    const user = await userService.findUserWithEmail(email);
+
+    if (!user) {
+      const response = new Response(true, 409, "This user does not exists");
+      return res.status(response.code).json(response);
+    }
+
+    const updatePayload = {
+      hasPaid: true,
+    };
+
+    await userService.updateUserWithId(user._id, updatePayload);
+
+    const response = new Response(true, 200, "User Confirmed");
+    userLogger.info(`User Confirmed OTP - ${user._id}`);
+    return res.status(response.code).json(response);
+  } catch (err) {
+    const response = new Response(
+      false,
+      500,
+      "An error ocurred, please try again",
+      err
+    );
+    userLogger.error(`An error occured: ${err}`);
+    return res.status(response.code).json(response);
+  }
+};

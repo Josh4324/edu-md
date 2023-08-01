@@ -29,7 +29,7 @@ const options = {
         description: "Local server",
       },
       {
-        url: "<your live url here>",
+        url: "http://34.217.32.128",
         description: "Live server",
       },
     ],
