@@ -10,7 +10,7 @@ const options = {
       contact: {
         name: "Joshua Adesanya",
         email: "adesanyajoshua@ymail.com",
-        url: "https://github.com/Josh4324/Eden",
+        url: "https://github.com/Josh4324/edu-md",
       },
       version: "1.0.0",
     },
