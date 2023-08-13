@@ -10,7 +10,7 @@ const userRoutes = require("./routes/user");
 // Port
 const port = process.env.PORT || 1000;
 //connection url
-const DB = process.env.MONGOLAB_URI_PROD || "mongodb://localhost/edu";
+const DB = process.env.MONGOLAB_URI_PROD || "mongodb://167.99.95.190/edu";
 
 Middleware(app);
 
@@ -48,5 +48,5 @@ mongoose
 
 //listening to port
 app.listen(port, () => {
-  console.log(`EDEN Server is running on port ${port}`);
+  console.log(`STA Server is running on port ${port}`);
 });
