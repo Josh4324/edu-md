@@ -29,7 +29,7 @@ const options = {
         description: "Local server",
       },
       {
-        url: "http://34.217.32.128",
+        url: "https://app.stacademy.io",
         description: "Live server",
       },
     ],

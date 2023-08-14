@@ -10,7 +10,7 @@ const userRoutes = require("./routes/user");
 // Port
 const port = process.env.PORT || 1000;
 //connection url
-const DB = process.env.MONGOLAB_URI_PROD || "mongodb://167.99.95.190/edu";
+const DB = process.env.MONGOLAB_URI_PROD || "mongodb://167.99.95.190/sta";
 
 Middleware(app);
 
