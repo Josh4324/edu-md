@@ -354,4 +354,40 @@ router.post(
  */
 router.post("/approve", userController.confirmUser);
 
+/**
+ * @openapi
+ * '/api/v1/user/image':
+ *  patch:
+ *     requestBody:
+ *        content:
+ *          multipart/form-data:
+ *            schema:
+ *              type: object
+ *              properties:
+ *                image:
+ *                  type: string
+ *                  format: binary
+ *     tags:
+ *     - User
+ *     summary: Upload user image
+ *     responses:
+ *      200:
+ *        description: Success
+ *      409:
+ *        description: Conflict
+ *      404:
+ *        description: Not Found
+ *      500:
+ *        description: Server Error
+ *     security:
+ *        - bearerAuth: []
+ *     description: Only an authenticated user can access this route
+ */
+router.patch(
+  "/image",
+  token.verifyToken,
+  upload.single("image"),
+  userController.imageUpload
+);
+
 module.exports = router;

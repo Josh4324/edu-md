@@ -77,3 +77,6 @@
 {"level":"info","message":"User Confirmed OTP - 64c545cfa287bc801b64e847","timestamp":"2023-08-01 05:21:35"}
 {"level":"info","message":"New user created - 64d903232be2534363cc7062","timestamp":"2023-08-13 17:21:55"}
 {"level":"info","message":"User Logged In - 64d903232be2534363cc7062","timestamp":"2023-08-13 17:22:08"}
+{"level":"info","message":"User Logged In - 64d905f6dc6b01052ca216fb","timestamp":"2023-08-14 08:45:03"}
+{"level":"error","message":"An error occured: ReferenceError: cloudinary is not defined","timestamp":"2023-08-14 08:45:54"}
+{"level":"info","message":"User Image Updated","timestamp":"2023-08-14 08:47:44"}

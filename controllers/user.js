@@ -2,9 +2,16 @@ const UserService = require("../services/user");
 const MailService = require("../services/mail");
 const { Response, Token } = require("../helpers");
 const UAParser = require("ua-parser-js");
+const cloudinary = require("cloudinary").v2;
 const argon2 = require("argon2");
 const { v4: uuidv4 } = require("uuid");
 const { userLogger } = require("../logger");
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
 
 const userService = new UserService();
 const mailService = new MailService();
@@ -313,6 +320,36 @@ exports.confirmUser = async (req, res) => {
     const response = new Response(true, 200, "User Confirmed");
     userLogger.info(`User Confirmed OTP - ${user._id}`);
     return res.status(response.code).json(response);
+  } catch (err) {
+    const response = new Response(
+      false,
+      500,
+      "An error ocurred, please try again",
+      err
+    );
+    userLogger.error(`An error occured: ${err}`);
+    return res.status(response.code).json(response);
+  }
+};
+
+exports.imageUpload = async (req, res) => {
+  try {
+    const { id } = req.payload;
+    cloudinary.uploader.upload(req.file.path, async (error, result) => {
+      if (result) {
+        let image = result.secure_url;
+        await userService.updateUserWithId(id, { image });
+
+        const response = new Response(
+          true,
+          200,
+          "Image uploaded successfully",
+          image
+        );
+        userLogger.info("User Image Updated");
+        return res.status(response.code).json(response);
+      }
+    });
   } catch (err) {
     const response = new Response(
       false,
