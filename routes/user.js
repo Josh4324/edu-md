@@ -50,12 +50,7 @@ const token = new Token();
  *      500:
  *        description: Server Error
  */
-router.post(
-  "/signup",
-  validation.signUpValidationRules(),
-  validation.validate,
-  userController.signUp
-);
+router.post("/signup", userController.signUp);
 /**
  * @openapi
  * '/api/v1/user/login':
@@ -89,12 +84,7 @@ router.post(
  *      500:
  *        description: Server Error
  */
-router.post(
-  "/login",
-  validation.loginValidationRules(),
-  validation.validate,
-  userController.logIn
-);
+router.post("/login", userController.logIn);
 
 /**
  * @openapi

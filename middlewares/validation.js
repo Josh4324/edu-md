@@ -4,12 +4,7 @@ const { Response } = require("../helpers");
 exports.signUpValidationRules = () => {
   return [
     // username must be an email
-    body("firstName")
-      .notEmpty()
-      .isAlpha()
-      .trim()
-      .escape()
-      .withMessage("Please provide your first name"),
+    body("firstName").notEmpty().withMessage("Please provide your first name"),
     body("lastName")
       .notEmpty()
       .isAlpha()

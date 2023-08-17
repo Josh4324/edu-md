@@ -12,6 +12,8 @@ const port = process.env.PORT || 1000;
 //connection url
 const DB = process.env.MONGOLAB_URI_PROD || "mongodb://localhost/sta";
 
+console.log(DB);
+
 Middleware(app);
 
 //REGISTER ROUTES HERE
